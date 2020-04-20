@@ -11,6 +11,7 @@ RUN apt-get update && \
       lsb-release \
       pkg-config \
       python-pip \
+      rpm \
       unzip \
       wget && \
     rm -rf /var/lib/apt/lists/*
