@@ -52,6 +52,7 @@ RUN for toolchain in $TOOLCHAIN; \
     done
 
 RUN cargo install cargo-deb
+RUN cargo install cargo-rpm
 
 ARG COMMIT
 ENV BUILDKITE_ABOUT_IMAGE "keithduncan/rust-agent\ncommit: $COMMIT\n\naws-cli: $AWS_CLI\nToolchain: $TOOLCHAIN\ncargo deb"
